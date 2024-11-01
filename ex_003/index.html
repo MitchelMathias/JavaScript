@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+        *{
+            font-family: cursive;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: rgba(169, 169, 169, 0.521);
+        }
+
+        header{
+            color: white;
+            text-align: center;
+            padding: 25px;
+            background-color: black;
+        }
+
+        main{
+            height: 100vh;
+            background-color: white;
+            width: 750px;
+            margin: 20px 0px;
+            border-radius: 15px;
+            border: 1 solid black;
+            margin: auto;
+            text-align: center;
+        }
+
+        main h1{
+            padding-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        /* esse jeito abaixo ta errado ksksksk */
+        var nome = window.prompt("Qual seu Nome: ")
+        document.write(`<header><h1> Eai <strong> ${nome} <strong>, tudo bem?</h1></header>`)
+
+        document.write(`<main><h1>Seu nome tem ${nome.length} letras</h1></main>`)
+    </script>
+</body>
+</html>

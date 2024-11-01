@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Teste</title>
+</head>
+<body>
+    <header>
+        <h1>Site com JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Section 1</a></li>
+                <li><a href="#">Section 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Informática</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, pariatur veritatis! Impedit vel quo fuga assumenda iure, nisi at explicabo voluptatibus reiciendis nihil adipisci optio! Eaque sit ullam explicabo sunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, quaerat perspiciatis. Incidunt tempora at, labore, dolorum magni similique nisi, eligendi voluptate sed iusto pariatur sit alias explicabo ex quisquam culpa?</p>
+                <article>
+                    <img src="img/lampada.png" alt="Lampada">
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2>Carros</h2>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim perferendis, mollitia rem eveniet distinctio similique, omnis nobis odit, aliquam reiciendis facilis commodi quae officiis quis esse fugit. Ut, hic ipsum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolore magni beatae atque ratione sint maiores molestias quia aliquid. Reprehenderit illum veritatis quidem quas et cumque modi, facilis neque earum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque et asperiores rerum voluptates aperiam facere suscipit quod, sunt totam sit beatae, tenetur deserunt corrupti nemo voluptatem eius accusantium accusamus in!</p>
+                <article>
+                    <img src="img/carro.jpg" alt="Carro de luxo">
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>&copy;Primero JavaScript</footer>
+    <script>
+        var a = window.document.getElementsByTagName('img')[0]
+            a.addEventListener('mouseenter', borda)
+            a.addEventListener('mouseout', sair)
+
+        function borda(){
+            a.style.border = '20px solid red'
+        }
+
+        function sair(){
+            a.style.border = 'none'
+        }
+    </script>
+</body>
+</html>

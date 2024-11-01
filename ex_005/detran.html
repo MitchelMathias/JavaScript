@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <main>
+        <h1>
+            Bem vindo ao Sit de Multas
+        </h1>
+        <form action="#">
+            <p><label for="vel">Em que velocidade você estava:</label><input type="number" id="vel" name="vel" placeholder="Digite aqui"> km/h.</p>
+            <input type="button" value="Verificar">
+        </form>
+        <p id="res"></p>
+    </main>
+    <script>
+        document.getElementsByTagName('input')[1].addEventListener('click',calcular)
+
+        function calcular(){
+            var s1 = window.document.getElementById('vel')
+            var v1 = parseInt(s1.value)
+            var res = window.document.getElementById('res')
+
+            res.innerHTML = `você estava a ${v1} km/h.`
+
+            if ( v1 > 80){
+                res.innerHTML += '<p>E foi Multado!!!</p>'
+            }
+            else{
+                res.innerHTML += '<p>Não foi dessa vez!!!</p>'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Começando JavaScript
+        </h1>
+    </header>
+    <main>
+        <h2>Estrutura Básica</h2>
+        <ul>
+            <li><strong>var</strong> / <strong>let</strong> / <strong>const</strong>: Declaram variáveis. <code>var</code> tem escopo de função, <code>let</code> tem escopo de bloco e permite alteração de valor, enquanto <code>const</code> cria uma constante.</li>
+            <li><strong>if</strong>, <strong>else if</strong>, <strong>else</strong>: Estrutura condicional usada para executar blocos de código com base em condições.</li>
+            <li><strong>switch</strong>: Estrutura condicional usada para selecionar um bloco de código para ser executado entre várias opções.</li>
+        </ul>
+
+        <h2>Estruturas de Loop</h2>
+        <ul>
+            <li><strong>for</strong>: Loop com número de iterações pré-definido.</li>
+            <li><strong>while</strong>: Loop que continua enquanto a condição for verdadeira.</li>
+            <li><strong>do...while</strong>: Executa o bloco de código uma vez e, em seguida, repete enquanto a condição for verdadeira.</li>
+            <li><strong>forEach</strong>: Método de arrays que itera sobre cada elemento do array, executando uma função para cada um.</li>
+        </ul>
+
+        <h2>Funções</h2>
+        <ul>
+            <li><strong>function</strong>: Define uma função, que é um bloco de código reutilizável.</li>
+            <li><strong>Arrow functions (<code>=></code>)</strong>: Sintaxe compacta para definir funções, mantendo o contexto de <code>this</code>.</li>
+        </ul>
+
+        <h2>Manipulação de Arrays</h2>
+        <ul>
+            <li><strong>push</strong>: Adiciona um elemento ao final do array.</li>
+            <li><strong>pop</strong>: Remove o último elemento do array.</li>
+            <li><strong>shift</strong>: Remove o primeiro elemento do array.</li>
+            <li><strong>unshift</strong>: Adiciona um elemento no início do array.</li>
+            <li><strong>map</strong>: Cria um novo array com o resultado da execução de uma função em cada elemento.</li>
+            <li><strong>filter</strong>: Cria um novo array com os elementos que atendem a uma condição.</li>
+            <li><strong>reduce</strong>: Reduz o array a um único valor, executando uma função em cada elemento.</li>
+            <li><strong>find</strong>: Retorna o primeiro elemento que atende a uma condição.</li>
+            <li><strong>includes</strong>: Verifica se um valor está presente no array, retornando <code>true</code> ou <code>false</code>.</li>
+        </ul>
+
+        <h2>Manipulação de Objetos</h2>
+        <ul>
+            <li><strong>Object.keys</strong>: Retorna um array com as chaves de um objeto.</li>
+            <li><strong>Object.values</strong>: Retorna um array com os valores de um objeto.</li>
+            <li><strong>Object.entries</strong>: Retorna um array de arrays contendo chave e valor de cada propriedade do objeto.</li>
+            <li><strong>delete</strong>: Remove uma propriedade de um objeto.</li>
+        </ul>
+
+        <h2>Métodos de String</h2>
+        <ul>
+            <li><strong>length</strong>: Retorna o comprimento da string.</li>
+            <li><strong>toUpperCase</strong> / <strong>toLowerCase</strong>: Converte a string para maiúsculas ou minúsculas.</li>
+            <li><strong>trim</strong>: Remove espaços em branco no início e no final da string.</li>
+            <li><strong>slice</strong>: Extrai uma parte da string e retorna a nova substring.</li>
+            <li><strong>split</strong>: Divide a string em um array com base em um delimitador.</li>
+            <li><strong>replace</strong>: Substitui parte da string por outra.</li>
+        </ul>
+
+        <h2>Manipulação de DOM</h2>
+        <ul>
+            <li><strong>document.querySelector</strong> / <strong>document.querySelectorAll</strong>: Seleciona elementos HTML com base em um seletor CSS.</li>
+            <li><strong>document.getElementById</strong>: Seleciona um elemento com um <code>id</code> específico.</li>
+            <li><strong>innerHTML</strong> / <strong>textContent</strong>: Define ou obtém o conteúdo HTML ou de texto de um elemento.</li>
+            <li><strong>addEventListener</strong>: Adiciona um ouvinte de eventos a um elemento.</li>
+            <li><strong>createElement</strong>: Cria um novo elemento HTML.</li>
+        </ul>
+
+        <h2>Operadores</h2>
+        <ul>
+            <li><strong>==</strong> / <strong>===</strong>: Compara igualdade; <code>===</code> compara tipo e valor.</li>
+            <li><strong>!=</strong> / <strong>!==</strong>: Compara desigualdade; <code>!==</code> compara tipo e valor.</li>
+            <li><strong>+</strong>, <strong>-</strong>, <strong>*</strong>, <strong>/</strong>: Operadores aritméticos básicos.</li>
+            <li><strong>&&</strong>, <strong>||</strong>: Operadores lógicos "E" e "OU".</li>
+            <li><strong>!</strong>: Operador lógico "não" (negação).</li>
+            <li><strong>typeof</strong>: Retorna o tipo de uma variável.</li>
+        </ul>
+
+        <h2>Tratamento de Erros</h2>
+        <ul>
+            <li><strong>try...catch</strong>: Bloco para capturar e tratar erros, evitando a interrupção do código.</li>
+            <li><strong>finally</strong>: Executa um bloco de código depois do <code>try...catch</code>, independentemente do resultado.</li>
+        </ul>
+
+        <h2>Promessas e Assincronismo</h2>
+        <ul>
+            <li><strong>Promise</strong>: Objeto para trabalhar com operações assíncronas.</li>
+            <li><strong>async</strong> / <strong>await</strong>: Sintaxe para simplificar o uso de Promises e operações assíncronas.</li>
+        </ul>
+    </main>
+    <footer>
+        <p><a href="#">Para mais Informações entre em contato</a></p>
+    </footer>
+    <script>
+        var nome = window.prompt("Qual o seu nome?")
+        window.alert("Tenha bons estudos " + nome + ", é um prazer ter você conosco!!")
+
+        /*var n1 = Number.parseFloat(window.prompt("Digite um número: "))
+        var n2 = Number.parseFloat(window.prompt("Digite outro número: "))
+        */
+
+        var n1 = window.prompt("Digite um número: ")
+        var n2 = window.prompt("Digite outro número: ")
+        var n1 = Number.parseFloat(n1)
+        var n2 = Number.parseFloat(n2)
+        var s = n1 + n2
+        window.alert(`O resultado de ${n1} + ${n2} é ${s}`)
+    </script> 
+</body>
+</html>

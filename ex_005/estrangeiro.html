@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro</title>
+</head>
+<body>
+    <main>
+        <h1>Ex_02</h1>
+        <form action="#">
+            <p for="pais">
+                <label for="pais">Em que pais você Nasceu:</label> <input type="text" name="pais" id="pais" placeholder="Digite aqui">
+            </p>
+            <p><input id="verificar" type="button" value="Verificar"></p>
+        </form>
+        <p id="res"></p>
+    </main>
+    <script>
+     window.document.getElementById('verificar').addEventListener('click',estrangeiro)
+
+        function estrangeiro(){
+            var pais = window.document.getElementById('pais').value.toUpperCase()
+            var res = window.document.getElementById('res')
+
+            if (pais == 'BRASIL' ){
+                res.innerHTML = 'Loucura voltar pro Brasil!!'
+            }
+            else{
+                res.innerHTML = 'Que bom que nossa Moeda ta desvalorizada né...'
+            }
+        }
+    </script>    
+</body>
+</html>
