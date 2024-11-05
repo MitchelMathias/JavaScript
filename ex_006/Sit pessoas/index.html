@@ -8,19 +8,36 @@
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Verificador de Idade:</h1>
     </header>
     <main>
         <div>
-            Testando
+            <form action="#">
+                <p>
+                    <label for="ano">Ano de Nascimento:</label>
+                    <input id="ano" type="number" placeholder="Digite aqui" required>
+                </p>
+                <p>
+                    sexo:
+                    <input id="masculino" name="sexo" type="radio" checked>
+                    <label for="masculino">Masculino</label>
+
+                    <input id="feminino" name="sexo" type="radio">
+                    <label for="feminino">Feminino</label>
+                </p>
+                <p>
+                    <button id="enviar" type="submit">Enviar</button>
+                    <button type="reset">Apagar</button>
+                </p>
+            </form>
         </div>
         <div>
-            Olá
+            <p id="resp">Preencha os dados Acima!!</p><br>
         </div>
     </main>
     <footer>
         <p>&copy;Mitchel Mathias</p>
     </footer>
-    <script src="javaScript/.js"></script>
+    <script src="javaScript/script.js"></script>
 </body>
 </html>
