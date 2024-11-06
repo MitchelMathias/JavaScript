@@ -18,49 +18,38 @@ function calcular(event){
     }
     else{
         if (sexo[0].checked){
-            resp.innerHTML = 'Masculino';
-            resp.innerHTML = `Você tem ${idade} anos`;
-    
             if (idade <= 13){
                 img.src = './img/criança.jpg';
-                resp.appendChild(img);
             }
             else if (idade <= 16){
                 img.src = './img/adolescente.jpg';
-                resp.appendChild(img);
             }
     
             else if ( idade <= 45){
                 img.src = './img/adulto.jpg'
-                resp.appendChild(img)
             }
             else {
                 img.src = './img/velho.jpg'
-                resp.appendChild(img)
             }
     
         }
         else {
             resp.innerHTML = 'Feminino'
-            resp.innerHTML = `Você tem ${idade} anos`;
             if (idade <= 13){
                 img.src = './img/menina_criança.jpg';
-                resp.appendChild(img);
             }
             else if (idade <= 16){
                 img.src = './img/adolescente_menina.jpg';
-                resp.appendChild(img);
             }
-    
             else if ( idade <= 45){
                 img.src = './img/mulher.jpg'
-                resp.appendChild(img)
             }
             else {
                 img.src = './img/velha_mulher.jpg'
-                resp.appendChild(img)
             }
         }
     }
 
+    resp.innerHTML = `Você tem ${idade} anos`;
+    resp.appendChild(img)
 }
